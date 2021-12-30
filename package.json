@@ -1,0 +1,19 @@
+{
+  "name": "slider-captcha",
+  "version": "1.0.0",
+  "description": "Generate a puzzle slider captcha and display with React component.\\\r ![](https://raw.githubusercontent.com/adrsch/slider-captcha/master/demo.gif)\r ## Installation\r React frontend:\r ```\r npm i @slider-captcha/react\r ```\r Backend:\r ```\r npm i @slider-captcha/core\r ```\r ## Usage\r React:\r ```\r import SliderCaptcha from '@slider-captcha/react';",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stakecube/slider-captcha.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stakecube/slider-captcha/issues"
+  },
+  "homepage": "https://github.com/stakecube/slider-captcha#readme"
+}
