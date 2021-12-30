@@ -1,23 +1,15 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
-import Card from "./card";
-import { SuccessIcon } from "./icons";
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import Card from './card';
 
-const Anchor = ({ text, fetchCaptcha, submitResponse, verified }) => {
+const Anchor = ({
+ text, fetchCaptcha, submitResponse, verified,
+}) => {
   const [open, setOpen] = useState(true);
   const handleClose = () => {
     setOpen(false);
   };
-  const handleOpen = () => {
-    setOpen(true);
-  };
-  const handleKey = (e) => {
-    if (e.code === "Enter" || e.code === "Space") {
-      setOpen(true);
-    } else if (e.key === "Escape") {
-      setOpen(false);
-    }
-  };
+
   return (
     <div>
       {!verified && open && (

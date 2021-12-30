@@ -1,4 +1,4 @@
-# @slider-captcha
+# STAKECUBE @slider-captcha
 Generate a puzzle slider captcha and display with React component.\
 ![](https://raw.githubusercontent.com/adrsch/slider-captcha/master/demo.gif)
 ## Installation
