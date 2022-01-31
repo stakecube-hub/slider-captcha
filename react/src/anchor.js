@@ -1,20 +1,14 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import Card from './card';
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import Card from "./card";
 
-const Anchor = ({
- text, fetchCaptcha, submitResponse, verified,
-}) => {
+const Anchor = ({ text, fetchCaptcha, submitResponse, verified }) => {
   const [open, setOpen] = useState(true);
-  const handleClose = () => {
-    setOpen(false);
-  };
 
   return (
     <div>
       {!verified && open && (
         <div>
-          <div className="scaptcha-hidden" onClick={handleClose} />
           <Card
             fetchCaptcha={fetchCaptcha}
             submitResponse={submitResponse}
