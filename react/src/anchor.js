@@ -1,24 +1,22 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
-import Card from "./card";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Card from './card';
 
-const Anchor = ({ text, fetchCaptcha, submitResponse, verified }) => {
-  const [open, setOpen] = useState(true);
-
-  return (
-    <div>
-      {!verified && open && (
-        <div>
-          <Card
-            fetchCaptcha={fetchCaptcha}
-            submitResponse={submitResponse}
-            text={text}
-          />
-        </div>
-      )}
-    </div>
-  );
-};
+const Anchor = ({
+ text, fetchCaptcha, submitResponse, verified,
+}) => (
+  <div>
+    {!verified && (
+      <div>
+        <Card
+          fetchCaptcha={fetchCaptcha}
+          submitResponse={submitResponse}
+          text={text}
+        />
+      </div>
+    )}
+  </div>
+);
 
 Anchor.propTypes = {
   fetchCaptcha: PropTypes.func.isRequired,
